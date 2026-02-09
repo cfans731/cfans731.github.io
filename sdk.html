@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第三方共享 SDK 信息清单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", Arial, sans-serif;
+        }
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-size: 24px;
+        }
+        .intro {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background-color: #3498db;
+            color: #fff;
+            font-weight: normal;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        td a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+        .compliance {
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .compliance h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .compliance ul {
+            padding-left: 20px;
+        }
+        .compliance li {
+            margin-bottom: 5px;
+        }
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                margin-bottom: 15px;
+                border: 1px solid #e0e0e0;
+            }
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+            }
+            td:before {
+                position: absolute;
+                top: 12px;
+                left: 15px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+                content: attr(data-label);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>第三方共享 SDK 信息清单表</h1>
+    
+    <div class="intro">
+        <p>在我们向您提供产品 / 服务时，我们会采取严格的安全措施。由于部分产品 / 服务无法由本应用单独完成，因此我们可能与合作伙伴等第三方共享或委托处理部分个人信息，以保障服务的顺利完成。</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>第三方公司</th>
+                <th>SDK名称 / 产品类型</th>
+                <th>共享信息</th>
+                <th>使用目的</th>
+                <th>使用场景 / 共享方式</th>
+                <th>第三方规则</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="第三方公司">华为技术有限公司</td>
+                <td data-label="SDK名称 / 产品类型">华为视频编辑</td>
+                <td data-label="共享信息">OAID、Android ID、录音权限、相机权限、存储权限</td>
+                <td data-label="使用目的">图片视频编辑</td>
+                <td data-label="使用场景 / 共享方式">图片视频编辑、后台接口传输</td>
+                <td data-label="第三方规则"><a href="https://developer.huawei.com/consumer/cn/doc/Media-Guides/introduction-0000001101263902" target="_blank">https://developer.huawei.com/consumer/cn/doc/Media-Guides/introduction-0000001101263902</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">三六零技术有限公司</td>
+                <td data-label="SDK名称 / 产品类型">360 加固</td>
+                <td data-label="共享信息">OAID、Android ID</td>
+                <td data-label="使用目的">App 安全加固、威胁检测</td>
+                <td data-label="使用场景 / 共享方式">App 构建时本地采集</td>
+                <td data-label="第三方规则"><a href="https://jiagu.360.cn/#/global/index" target="_blank">https://jiagu.360.cn/#/global/index</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">华为技术有限公司</td>
+                <td data-label="SDK名称 / 产品类型">华为推送 SDK</td>
+                <td data-label="共享信息">设备信息、网络信息</td>
+                <td data-label="使用目的">消息推送</td>
+                <td data-label="使用场景 / 共享方式">SDK 本机采集</td>
+                <td data-label="第三方规则"><a href="https://developer.huawei.com/consumer/cn/doc/Media-Guides/introduction-0000001101263902" target="_blank">https://developer.huawei.com/consumer/cn/doc/Media-Guides/introduction-0000001101263902</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">荣耀终端有限公司</td>
+                <td data-label="SDK名称 / 产品类型">荣耀推送</td>
+                <td data-label="共享信息">设备信息、网络信息</td>
+                <td data-label="使用目的">消息推送</td>
+                <td data-label="使用场景 / 共享方式">SDK 本机采集</td>
+                <td data-label="第三方规则"><a href="https://www.hihonor.com/cn/privacy/" target="_blank">https://www.hihonor.com/cn/privacy/</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">广东欧珀移动通信有限公司</td>
+                <td data-label="SDK名称 / 产品类型">OPPO PUSH SDK</td>
+                <td data-label="共享信息">网络信息</td>
+                <td data-label="使用目的">消息推送</td>
+                <td data-label="使用场景 / 共享方式">SDK 本机采集</td>
+                <td data-label="第三方规则"><a href="https://open.oppomobile.com/new/developmentDoc/info?id=11228" target="_blank">https://open.oppomobile.com/new/developmentDoc/info?id=11228</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">维沃移动通信有限公司</td>
+                <td data-label="SDK名称 / 产品类型">VIVO PUSH</td>
+                <td data-label="共享信息">网络信息、存储权限</td>
+                <td data-label="使用目的">消息推送</td>
+                <td data-label="使用场景 / 共享方式">SDK 本机采集</td>
+                <td data-label="第三方规则"><a href="https://www.vivo.com.cn/about-vivo/privacy-policy" target="_blank">https://www.vivo.com.cn/about-vivo/privacy-policy</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">小米移动软件有限公司</td>
+                <td data-label="SDK名称 / 产品类型">小米推送 SDK</td>
+                <td data-label="共享信息">设备信息、IMEI、IMSI、Android ID、OAID、定位、网络信息</td>
+                <td data-label="使用目的">消息推送</td>
+                <td data-label="使用场景 / 共享方式">SDK 本机采集</td>
+                <td data-label="第三方规则"><a href="https://dev.mi.com/console/doc/detail?pId=1822" target="_blank">https://dev.mi.com/console/doc/detail?pId=1822</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">广州市动景计算机科技有限公司</td>
+                <td data-label="SDK名称 / 产品类型">UC 统计</td>
+                <td data-label="共享信息">设备信息、应用列表、Crash 信息</td>
+                <td data-label="使用目的">数据分析、崩溃统计</td>
+                <td data-label="使用场景 / 共享方式">后台接口传输</td>
+                <td data-label="第三方规则"><a href="https://open-uc.uc.cn/agreement/secret" target="_blank">https://open-uc.uc.cn/agreement/secret</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">深圳市腾讯计算机系统有限公司</td>
+                <td data-label="SDK名称 / 产品类型">腾讯 X5 浏览器</td>
+                <td data-label="共享信息">设备标识符、剪切板、传感器、安装列表</td>
+                <td data-label="使用目的">网页浏览</td>
+                <td data-label="使用场景 / 共享方式">后台接口传输</td>
+                <td data-label="第三方规则"><a href="https://x5.tencent.com/docs.html" target="_blank">https://x5.tencent.com/docs.html</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">友盟同欣（北京）科技有限公司</td>
+                <td data-label="SDK名称 / 产品类型">友盟 + 移动统计 SDK</td>
+                <td data-label="共享信息">IMEI、OAID、IP、操作记录</td>
+                <td data-label="使用目的">数据分析</td>
+                <td data-label="使用场景 / 共享方式">SDK 收集上传</td>
+                <td data-label="第三方规则"><a href="https://www.umeng.com/policy" target="_blank">https://www.umeng.com/policy</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">友盟同欣（北京）科技有限公司</td>
+                <td data-label="SDK名称 / 产品类型">友盟 + 性能监控 SDK</td>
+                <td data-label="共享信息">设备标识信息</td>
+                <td data-label="使用目的">崩溃监控</td>
+                <td data-label="使用场景 / 共享方式">SDK 收集上传</td>
+                <td data-label="第三方规则"><a href="https://www.umeng.com/policy" target="_blank">https://www.umeng.com/policy</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">北京巨量引擎网络技术有限公司</td>
+                <td data-label="SDK名称 / 产品类型">穿山甲广告 SDK</td>
+                <td data-label="共享信息">设备标识、IP、定位、传感器</td>
+                <td data-label="使用目的">广告投放</td>
+                <td data-label="使用场景 / 共享方式">SDK 收集上传</td>
+                <td data-label="第三方规则"><a href="https://www.csjplatform.com/privacy" target="_blank">https://www.csjplatform.com/privacy</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">北京快手科技有限公司</td>
+                <td data-label="SDK名称 / 产品类型">快手广告 SDK</td>
+                <td data-label="共享信息">设备标识、IP、定位、电话信息</td>
+                <td data-label="使用目的">广告投放</td>
+                <td data-label="使用场景 / 共享方式">SDK 收集上传</td>
+                <td data-label="第三方规则"><a href="https://u.kuaishou.com/home/detail/1290" target="_blank">https://u.kuaishou.com/home/detail/1290</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">深圳市腾讯计算机系统有限公司</td>
+                <td data-label="SDK名称 / 产品类型">优量汇 / 广点通</td>
+                <td data-label="共享信息">设备标识、IP、定位、传感器</td>
+                <td data-label="使用目的">广告投放</td>
+                <td data-label="使用场景 / 共享方式">SDK 收集上传</td>
+                <td data-label="第三方规则"><a href="https://e.qq.com/dev/help_detail.html" target="_blank">https://e.qq.com/dev/help_detail.html</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">北京掌上乐游科技有限公司</td>
+                <td data-label="SDK名称 / 产品类型">融合广告 SDK</td>
+                <td data-label="共享信息">设备标识、剪切板、安装列表</td>
+                <td data-label="使用目的">广告投放</td>
+                <td data-label="使用场景 / 共享方式">后台接口传输</td>
+                <td data-label="第三方规则"><a href="https://www.csjplatform.com/terms/gromoresdk-privacy" target="_blank">https://www.csjplatform.com/terms/gromoresdk-privacy</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">北京创智汇聚科技股份有限公司</td>
+                <td data-label="SDK名称 / 产品类型">Sigmob</td>
+                <td data-label="共享信息">设备标识、剪切板、安装列表</td>
+                <td data-label="使用目的">广告投放</td>
+                <td data-label="使用场景 / 共享方式">后台接口传输</td>
+                <td data-label="第三方规则"><a href="https://www.csjplatform.com/terms/gromoresdk-privacy" target="_blank">https://www.csjplatform.com/terms/gromoresdk-privacy</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">百度网络技术有限公司</td>
+                <td data-label="SDK名称 / 产品类型">百度联盟</td>
+                <td data-label="共享信息">设备标识、剪切板、安装列表</td>
+                <td data-label="使用目的">广告投放</td>
+                <td data-label="使用场景 / 共享方式">后台接口传输</td>
+                <td data-label="第三方规则"><a href="https://union.baidu.com/bqt/#/legal/policies" target="_blank">https://union.baidu.com/bqt/#/legal/policies</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">支付宝（中国）网络技术有限公司</td>
+                <td data-label="SDK名称 / 产品类型">支付宝 SDK</td>
+                <td data-label="共享信息">支付订单信息</td>
+                <td data-label="使用目的">支付服务</td>
+                <td data-label="使用场景 / 共享方式">接口传输</td>
+                <td data-label="第三方规则"><a href="https://render.alipay.com/p/c/k2cx0tg8" target="_blank">https://render.alipay.com/p/c/k2cx0tg8</a></td>
+            </tr>
+            <tr>
+                <td data-label="第三方公司">腾讯计算机系统有限公司</td>
+                <td data-label="SDK名称 / 产品类型">微信支付 SDK</td>
+                <td data-label="共享信息">支付订单信息</td>
+                <td data-label="使用目的">支付服务</td>
+                <td data-label="使用场景 / 共享方式">接口传输</td>
+                <td data-label="第三方规则"><a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=privacy" target="_blank">https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=privacy</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="compliance">
+        <h2>合规说明</h2>
+        <ul>
+            <li>所有 SDK 仅在必要业务场景下启用</li>
+            <li>非必要权限需用户授权</li>
+            <li>拒绝非核心权限不影响基本功能</li>
+            <li>数据收集遵循最小必要原则</li>
+            <li>严格遵守相关法律法规</li>
+        </ul>
+    </div>
+</body>
+</html>
